@@ -209,7 +209,6 @@ public:
 		republish_vote,
 		confirm_req,
 		confirm_ack,
-		node_id_handshake,
 
 		// bootstrap specific
 		initiate,
