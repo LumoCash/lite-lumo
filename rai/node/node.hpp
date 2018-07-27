@@ -398,7 +398,7 @@ public:
 	boost::asio::ip::udp::resolver resolver;
 	rai::node & node;
 	bool on;
-	static uint16_t const node_port = rai::rai_network == rai::rai_networks::rai_live_network ? 7075 : 54000;
+	static uint16_t const node_port = rai::rai_network == rai::rai_networks::rai_live_network ? 4050 : 40500;
 };
 class logging
 {
