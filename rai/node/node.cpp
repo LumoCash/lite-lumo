@@ -810,8 +810,8 @@ lmdb_max_dbs (128)
 			preconfigured_peers.push_back ("peer4.lumo.cash");
 			preconfigured_peers.push_back ("peer5.lumo.cash");
 			preconfigured_representatives.push_back (rai::account ("39946672CCC5CE9B1DC34A3D23969B038C2E1DA449EF155004F3A04312536753"));
-			state_block_parse_canary = rai::block_hash ("CFBCD0A7356AA925796C7BA993A6801AC8194D1750163FF09718C686E5C53BE3");
-			state_block_generate_canary = rai::block_hash ("CFBCD0A7356AA925796C7BA993A6801AC8194D1750163FF09718C686E5C53BE3");
+			state_block_parse_canary = rai::block_hash ("5F63E6EF4680F890B1A430C521E2F4AF19DCDF8844714C211AA3F97EA9CC7F14");
+			state_block_generate_canary = rai::block_hash ("5F63E6EF4680F890B1A430C521E2F4AF19DCDF8844714C211AA3F97EA9CC7F14");
 			break;
 		default:
 			assert (false);

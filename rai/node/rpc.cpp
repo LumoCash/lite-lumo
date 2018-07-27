@@ -1910,6 +1910,10 @@ void rai::rpc_handler::account_history ()
 			error_response (response, "Invalid count limit");
 		}
 	}
+	else
+	{
+		error_response (response, "Unknown error");
+	}
 }
 
 void rai::rpc_handler::keepalive ()

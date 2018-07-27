@@ -38,10 +38,10 @@ char const * beta_genesis_data = R"%%%({
 
 char const * live_genesis_data = R"%%%({
 	"type": "open",
-	"source": "CFBCD0A7356AA925796C7BA993A6801AC8194D1750163FF09718C686E5C53BE3",
+	"source": "39946672CCC5CE9B1DC34A3D23969B038C2E1DA449EF155004F3A04312536753",
 	"representative": "lumo_1genessesjggmegw8kjx6gdbp1we7rgtakhh4oa1bwx1aeb78stmsx387gkh",
 	"account": "lumo_1genessesjggmegw8kjx6gdbp1we7rgtakhh4oa1bwx1aeb78stmsx387gkh",
-	"work": "62f05417dd3fb691",
+	"work": "1fd58bee9dc9bcda",
 	"signature": "A798C5D5F3C8D13BD4030BD11A2E975B984D3FD19BB5E435A54F1D816E4441DF14935CE4D819424274D95DBB6C1CFA9E33C03FAB0A5D7342CADB202F6921B502"
 })%%%";
 
@@ -158,13 +158,6 @@ bool rai::votes::uncontested ()
 rai::keypair::keypair ()
 {
 	random_pool.GenerateBlock (prv.data.bytes.data (), prv.data.bytes.size ());
-	ed25519_publickey (prv.data.bytes.data (), pub.bytes.data ());
-}
-
-// Create a keypair given a private key
-rai::keypair::keypair (rai::raw_key && prv_a) :
-prv (std::move (prv_a))
-{
 	ed25519_publickey (prv.data.bytes.data (), pub.bytes.data ());
 }
 
